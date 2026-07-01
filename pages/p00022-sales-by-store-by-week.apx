@@ -105,6 +105,10 @@ page 22 (
                 html
             ]
         }
+        genAI {
+            naturalLanguageSupport: true
+            reportContext: Báo cáo tổng hợp doanh số bán hàng và số lượng bán ra theo từng tuần và theo từng khu vực (San Francisco, Boston, Chicago).
+        }
         advanced {
             savedReportMappingIdentifier: 2712029319722118413
         }
@@ -364,6 +368,10 @@ page 22 (
                 csv
                 html
             ]
+        }
+        genAI {
+            naturalLanguageSupport: true
+            reportContext: Báo cáo chi tiết top 10 tuần có tổng doanh thu và số lượng bán hàng cao nhất.
         }
 
         column THE_MONTH (
