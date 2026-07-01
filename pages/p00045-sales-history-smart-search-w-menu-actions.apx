@@ -1,7 +1,7 @@
 page 45 (
-    name: Sales History Smart Search w Menu Actions
+    name: Lịch sử doanh số tìm kiếm thông minh với thao tác menu
     alias: SALES-HISTORY-SMART-SEARCH-W-MENU-ACTIONS
-    title: Sales History Smart Search w Menu Actions
+    title: Lịch sử doanh số tìm kiếm thông minh với thao tác menu
     pageGroup: @reporting
     appearance {
         pageTemplate: @/standard
@@ -19,7 +19,7 @@ page 45 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region breadcrumb (
@@ -89,7 +89,7 @@ page 45 (
         filter P45_PRODUCT (
             type: checkboxGroup
             label {
-                label: Product
+                label: Sản phẩm
             }
             lov {
                 type: distinctValues
@@ -108,7 +108,7 @@ page 45 (
         filter P45_REGION (
             type: checkboxGroup
             label {
-                label: Region
+                label: Khu vực
             }
             lov {
                 type: distinctValues
@@ -127,7 +127,7 @@ page 45 (
         filter P45_SEARCH (
             type: search
             label {
-                label: Search
+                label: Tìm kiếm
             }
             layout {
                 sequence: 10
@@ -137,7 +137,7 @@ page 45 (
         filter P45_STORE (
             type: checkboxGroup
             label {
-                label: Store
+                label: Cửa hàng
             }
             lov {
                 type: distinctValues
@@ -156,7 +156,7 @@ page 45 (
         filter P45_THE_MONTH (
             type: checkboxGroup
             label {
-                label: Month
+                label: Tháng
             }
             lov {
                 type: distinctValues
@@ -224,13 +224,13 @@ page 45 (
         settings {
             title: &PRODUCT.
             description:
-                ```html
+                ```
                 Location: &REGION.: &STORE.<br>
                 Date: &DATE_OF_SALE. <br>
                 Transaction: &TRANSACTION_ID.
                 ```
             miscellaneous:
-                ```html
+                ```
                 Price: &ITEM_PRICE. <br>
                 Quantity: &QUANTITY. 
                 ```
@@ -241,7 +241,7 @@ page 45 (
             icon: fa-tag
         }
         plugin-badge {
-            label: Sale
+            label: Bán hàng
             value: SALE
         }
         pagination {
@@ -394,7 +394,7 @@ page 45 (
         action actions (
             position: primaryActions
             template: menu
-            label: Actions
+            label: Thao tác
             layout {
                 sequence: 20
             }
@@ -405,7 +405,7 @@ page 45 (
             }
 
             menu product-details (
-                label: Product Details
+                label: Chi tiết sản phẩm
                 layout {
                     sequence: 10
                 }
@@ -425,7 +425,7 @@ page 45 (
             )
 
             menu store-details (
-                label: Store Details
+                label: Chi tiết cửa hàng
                 layout {
                     sequence: 30
                 }
@@ -445,7 +445,7 @@ page 45 (
             )
 
             menu transaction-details (
-                label: Transaction Details
+                label: Chi tiết giao dịch
                 layout {
                     sequence: 20
                 }
@@ -494,7 +494,7 @@ page 45 (
     pageItem P45_NAVIGATION (
         type: selectList
         label {
-            label: Navigation
+            label: Điều hướng
             alignment: left
         }
         lov {
@@ -521,7 +521,7 @@ page 45 (
 
     button reset (
         buttonName: reset
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 30
             region: @breadcrumb
@@ -549,7 +549,7 @@ page 45 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -622,4 +622,3 @@ page 45 (
     )
 
 )
-

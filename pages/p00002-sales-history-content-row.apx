@@ -1,7 +1,7 @@
 page 2 (
-    name: Sales History Content Row
+    name: Lịch sử doanh số dạng hàng nội dung
     alias: SALES-HISTORY-CONTENT-ROW
-    title: Sales History Content Row
+    title: Lịch sử doanh số dạng hàng nội dung
     pageGroup: @reporting
     appearance {
         pageTemplate: @/left-side-column
@@ -92,7 +92,7 @@ page 2 (
         facet P2_PRODUCT (
             type: checkboxGroup
             label {
-                label: Product
+                label: Sản phẩm
             }
             lov {
                 type: distinctValues
@@ -111,7 +111,7 @@ page 2 (
         facet P2_REGION (
             type: checkboxGroup
             label {
-                label: Region
+                label: Khu vực
             }
             lov {
                 type: distinctValues
@@ -130,7 +130,7 @@ page 2 (
         facet P2_SEARCH (
             type: search
             label {
-                label: Search
+                label: Tìm kiếm
             }
             layout {
                 sequence: 10
@@ -140,7 +140,7 @@ page 2 (
         facet P2_STORE (
             type: checkboxGroup
             label {
-                label: Store
+                label: Cửa hàng
             }
             lov {
                 type: distinctValues
@@ -159,7 +159,7 @@ page 2 (
         facet P2_THE_MONTH (
             type: checkboxGroup
             label {
-                label: Month
+                label: Tháng
             }
             lov {
                 type: distinctValues
@@ -245,7 +245,7 @@ page 2 (
             icon: fa-tag
         }
         plugin-badge {
-            label: Sale
+            label: Bán hàng
             value: SALE
         }
         pagination {
@@ -465,7 +465,7 @@ page 2 (
         column PRODUCT (
             type: plainText
             heading {
-                heading: Product
+                heading: Sản phẩm
             }
             layout {
                 sequence: 10
@@ -478,7 +478,7 @@ page 2 (
         column QUANTITY (
             type: plainText
             heading {
-                heading: Quantity
+                heading: Số lượng
                 alignment: end
             }
             layout {
@@ -496,7 +496,7 @@ page 2 (
         column SALE (
             type: plainText
             heading {
-                heading: Total Sales
+                heading: Tổng doanh số
                 alignment: end
             }
             layout {
@@ -516,7 +516,7 @@ page 2 (
     pageItem P2_NAVIGATION (
         type: selectList
         label {
-            label: Navigation
+            label: Điều hướng
             alignment: left
         }
         lov {
@@ -544,7 +544,7 @@ page 2 (
     pageItem P2_MONTH (
         type: selectList
         label {
-            label: Month
+            label: Tháng
             alignment: left
         }
         lov {
@@ -583,7 +583,7 @@ page 2 (
 
     button reset (
         buttonName: reset
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 30
             region: @breadcrumb
@@ -631,7 +631,7 @@ page 2 (
     )
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb

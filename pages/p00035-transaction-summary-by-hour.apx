@@ -1,7 +1,7 @@
 page 35 (
-    name: Transaction Summary by Hour
+    name: Tổng hợp giao dịch theo giờ
     alias: TRANSACTION-SUMMARY-BY-HOUR
-    title: Transaction Summary by Hour
+    title: Tổng hợp giao dịch theo giờ
     appearance {
         pageTemplate: @/standard
         templateOptions: #DEFAULT#
@@ -81,8 +81,8 @@ page 35 (
             maxRowsToProcess: 100000
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: This query returns more than #MAX_ROW_COUNT# rows, please filter your data to ensure complete results.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
         }
         actionsMenu {
             savePublicReport: true
@@ -100,7 +100,7 @@ page 35 (
         column API_INVOCATIONS (
             type: plainText
             heading {
-                heading: API Invocations
+                heading: Lượt gọi API
                 alignment: center
             }
             layout {
@@ -121,7 +121,7 @@ page 35 (
         column API_PS (
             type: plainText
             heading {
-                heading: API calls / second
+                heading: Lượt gọi API / giây
                 alignment: center
             }
             layout {
@@ -142,7 +142,7 @@ page 35 (
         column ORDERS_PS (
             type: plainText
             heading {
-                heading: Orders / second
+                heading: Đơn hàng / giây
                 alignment: center
             }
             layout {
@@ -163,7 +163,7 @@ page 35 (
         column ORDERS_XACTIONS_ATTEMPTED (
             type: plainText
             heading {
-                heading: Order Transactions Attempted
+                heading: Số giao dịch đơn hàng đã thử
                 alignment: center
             }
             layout {
@@ -184,7 +184,7 @@ page 35 (
         column OWNERS (
             type: plainText
             heading {
-                heading: Submitting Users
+                heading: Người dùng gửi
                 alignment: center
             }
             layout {
@@ -202,7 +202,7 @@ page 35 (
         column THE_MINUTE (
             type: plainText
             heading {
-                heading: Hour
+                heading: Giờ
                 alignment: center
             }
             layout {
@@ -222,7 +222,7 @@ page 35 (
         column TOTAL_DAYS (
             type: plainText
             heading {
-                heading: Total Days
+                heading: Tổng số ngày
                 alignment: center
             }
             layout {
@@ -243,7 +243,7 @@ page 35 (
         column TOTAL_ORDERS (
             type: plainText
             heading {
-                heading: Total Orders
+                heading: Tổng đơn hàng
                 alignment: center
             }
             layout {
@@ -313,7 +313,7 @@ page 35 (
 
     button reset-report (
         buttonName: RESET_REPORT
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 10
             region: @transaction-generation-log-summarized-by-hour
@@ -342,7 +342,7 @@ page 35 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -366,4 +366,3 @@ page 35 (
     )
 
 )
-

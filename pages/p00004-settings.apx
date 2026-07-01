@@ -1,7 +1,7 @@
 page 4 (
-    name: Administration
+    name: Quản trị
     alias: SETTINGS
-    title: Administration
+    title: Quản trị
     pageGroup: @administration
     appearance {
         pageTemplate: @/standard
@@ -65,7 +65,7 @@ page 4 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -89,4 +89,3 @@ page 4 (
     )
 
 )
-

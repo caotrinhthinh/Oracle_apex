@@ -1,7 +1,7 @@
 page 29 (
-    name: Generate Transaction
+    name: Tạo giao dịch
     alias: GENERATE-TRANSACTION
-    title: Generate Transaction
+    title: Tạo giao dịch
     pageGroup: @data-generation
     appearance {
         pageTemplate: @/standard
@@ -98,7 +98,7 @@ page 29 (
             reportColumnQueryId: 2
             derivedColumn: N
             heading {
-                heading: Created On
+                heading: Tạo lúc
             }
             layout {
                 sequence: 20
@@ -109,7 +109,7 @@ page 29 (
             reportColumnQueryId: 8
             derivedColumn: N
             heading {
-                heading: Date Of Sale
+                heading: Ngày bán
             }
             layout {
                 sequence: 80
@@ -123,7 +123,7 @@ page 29 (
             reportColumnQueryId: 1
             derivedColumn: N
             heading {
-                heading: Transaction ID
+                heading: ID giao dịch
                 alignment: end
             }
             layout {
@@ -136,7 +136,7 @@ page 29 (
             reportColumnQueryId: 6
             derivedColumn: N
             heading {
-                heading: Item Price
+                heading: Giá mặt hàng
                 alignment: end
             }
             layout {
@@ -149,7 +149,7 @@ page 29 (
             reportColumnQueryId: 10
             derivedColumn: N
             heading {
-                heading: Product
+                heading: Sản phẩm
             }
             layout {
                 sequence: 110
@@ -169,7 +169,7 @@ page 29 (
             reportColumnQueryId: 5
             derivedColumn: N
             heading {
-                heading: Quantity
+                heading: Số lượng
                 alignment: end
             }
             layout {
@@ -182,7 +182,7 @@ page 29 (
             reportColumnQueryId: 7
             derivedColumn: N
             heading {
-                heading: Sale Amount
+                heading: Giá trị bán hàng
                 alignment: end
             }
             layout {
@@ -195,7 +195,7 @@ page 29 (
             reportColumnQueryId: 9
             derivedColumn: N
             heading {
-                heading: Store
+                heading: Cửa hàng
             }
             layout {
                 sequence: 100
@@ -227,7 +227,7 @@ page 29 (
 
     button generate-transaction (
         buttonName: GENERATE_TRANSACTION
-        label: Generate Transaction
+        label: Tạo giao dịch
         layout {
             sequence: 40
             region: @breadcrumb
@@ -249,7 +249,7 @@ page 29 (
 
     button reset (
         buttonName: reset
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 50
             region: @breadcrumb
@@ -277,7 +277,7 @@ page 29 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -373,4 +373,3 @@ page 29 (
     )
 
 )
-

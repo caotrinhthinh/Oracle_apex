@@ -1,7 +1,7 @@
 page 8 (
-    name: Store Regions
+    name: Khu vực cửa hàng
     alias: STORE-REGIONS
-    title: Store Regions
+    title: Khu vực cửa hàng
     pageGroup: @regions
     appearance {
         pageTemplate: @/standard
@@ -18,7 +18,7 @@ page 8 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region breadcrumb (
@@ -123,8 +123,8 @@ page 8 (
             maxRowsToProcess: 100000
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: This query returns more than #MAX_ROW_COUNT# rows, please filter your data to ensure complete results.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
         }
         genAI {
             naturalLanguageSupport: true
@@ -145,7 +145,7 @@ page 8 (
         column AVG_STORE_SALES (
             type: plainText
             heading {
-                heading: Average Sales per Store
+                heading: Doanh số trung bình mỗi cửa hàng
                 alignment: end
             }
             layout {
@@ -183,7 +183,7 @@ page 8 (
         column IS_DEFAULT (
             type: plainText
             heading {
-                heading: Is Default
+                heading: Mặc định
             }
             layout {
                 sequence: 6
@@ -199,7 +199,7 @@ page 8 (
         column REGION_NAME (
             type: link
             heading {
-                heading: Region
+                heading: Khu vực
             }
             layout {
                 sequence: 2
@@ -225,7 +225,7 @@ page 8 (
         column SALES_PRIOR_30_DAYS (
             type: plainText
             heading {
-                heading: Sales Prior 30 Days
+                heading: Doanh số 30 ngày trước
                 alignment: center
             }
             layout {
@@ -246,7 +246,7 @@ page 8 (
         column SALES_TRAILING_30_DAYS (
             type: plainText
             heading {
-                heading: Sales Trailing 30 Days
+                heading: Doanh số 30 ngày gần nhất
                 alignment: end
             }
             layout {
@@ -267,7 +267,7 @@ page 8 (
         column SALES_TREND (
             type: plainText
             heading {
-                heading: Sales Trend
+                heading: Xu hướng doanh số
                 alignment: center
             }
             layout {
@@ -288,7 +288,7 @@ page 8 (
         column SALES_TREND_PERCENTAGE (
             type: plainText
             heading {
-                heading: Sales Trend Percentage
+                heading: Tỷ lệ xu hướng doanh số
                 alignment: end
             }
             layout {
@@ -312,7 +312,7 @@ page 8 (
         column STORES (
             type: plainText
             heading {
-                heading: Stores
+                heading: Các cửa hàng
                 alignment: end
             }
             layout {
@@ -390,7 +390,7 @@ page 8 (
 
     button create (
         buttonName: CREATE
-        label: Add Region
+        label: Thêm khu vực
         layout {
             sequence: 30
             region: @breadcrumb
@@ -417,7 +417,7 @@ page 8 (
 
     button reset-report (
         buttonName: RESET_REPORT
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 4
             region: @store-regions
@@ -446,7 +446,7 @@ page 8 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -470,4 +470,3 @@ page 8 (
     )
 
 )
-

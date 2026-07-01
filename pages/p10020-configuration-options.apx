@@ -1,7 +1,7 @@
 page 10020 (
-    name: Configuration Options
+    name: Tùy chọn cấu hình
     alias: CONFIGURATION-OPTIONS
-    title: Configuration Options
+    title: Tùy chọn cấu hình
     appearance {
         pageMode: modalDialog
         dialogTemplate: @/modal-dialog
@@ -97,8 +97,8 @@ page 10020 (
             type: rowRangesXToY
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Số dòng tối đa cho báo cáo này là #MAX_ROW_COUNT# dòng. Vui lòng áp dụng bộ lọc để giảm số lượng bản ghi trong truy vấn.
         }
         advanced {
             savedReportMappingIdentifier: 18657016737753061240
@@ -107,7 +107,7 @@ page 10020 (
         column APPLICATION_OPTION (
             type: plainText
             heading {
-                heading: Feature
+                heading: Tính năng
             }
             layout {
                 sequence: 2
@@ -123,7 +123,7 @@ page 10020 (
         column CURRENT_STATUS (
             type: plainText
             heading {
-                heading: Current Status
+                heading: Trạng thái hiện tại
             }
             layout {
                 sequence: 7
@@ -139,7 +139,7 @@ page 10020 (
         column DESCRIPTION (
             type: plainText
             heading {
-                heading: Description
+                heading: Mô tả
             }
             layout {
                 sequence: 4
@@ -155,7 +155,7 @@ page 10020 (
         column FEATURE_IDENTIFIER (
             type: plainText
             heading {
-                heading: Feature Identifier
+                heading: Định danh tính năng
                 alignment: center
             }
             layout {
@@ -188,7 +188,7 @@ page 10020 (
         column STATUS (
             type: plainText
             heading {
-                heading: Status
+                heading: Trạng thái
             }
             layout {
                 sequence: 3
@@ -207,7 +207,7 @@ page 10020 (
         column UPDATED (
             type: plainText
             heading {
-                heading: Updated
+                heading: Đã cập nhật
             }
             layout {
                 sequence: 5
@@ -226,7 +226,7 @@ page 10020 (
         column UPDATED_BY (
             type: plainText
             heading {
-                heading: Updated By
+                heading: Cập nhật bởi
             }
             layout {
                 sequence: 6
@@ -283,7 +283,7 @@ page 10020 (
 
     button apply-changes (
         buttonName: APPLY_CHANGES
-        label: Apply Changes
+        label: Áp dụng thay đổi
         layout {
             sequence: 10
             region: @buttons
@@ -301,7 +301,7 @@ page 10020 (
 
     button reset-report (
         buttonName: RESET_REPORT
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 20
             region: @configuration-options
@@ -367,4 +367,3 @@ page 10020 (
     )
 
 )
-

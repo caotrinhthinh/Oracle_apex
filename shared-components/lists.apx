@@ -1,8 +1,8 @@
 list application-actions (
-    name: Application Actions
+    name: Thao tác ứng dụng
 
     entry administration (
-        label: Administration
+        label: Quản trị
         icon {
             imageIconCssClasses: fa-user
         }
@@ -20,7 +20,7 @@ list application-actions (
     )
 
     entry analysis-reports (
-        label: Analysis Reports
+        label: Báo cáo phân tích
         icon {
             imageIconCssClasses: fa-file-o
         }
@@ -38,7 +38,7 @@ list application-actions (
     )
 
     entry generate-transactions (
-        label: Generate Transactions
+        label: Tạo giao dịch
         icon {
             imageIconCssClasses: fa-gears
         }
@@ -56,7 +56,7 @@ list application-actions (
     )
 
     entry products (
-        label: Products
+        label: Sản phẩm
         icon {
             imageIconCssClasses: fa-package
         }
@@ -75,7 +75,7 @@ list application-actions (
     )
 
     entry regions (
-        label: Regions
+        label: Khu vực
         icon {
             imageIconCssClasses: fa-globe
         }
@@ -94,7 +94,7 @@ list application-actions (
     )
 
     entry sales-dashboard (
-        label: Sales Dashboard
+        label: Bảng điều khiển doanh số
         icon {
             imageIconCssClasses: fa-line-chart
         }
@@ -113,7 +113,7 @@ list application-actions (
     )
 
     entry sales-history (
-        label: Sales History
+        label: Lịch sử doanh số
         icon {
             imageIconCssClasses: fa-credit-card
         }
@@ -133,7 +133,7 @@ list application-actions (
     )
 
     entry stores (
-        label: Stores
+        label: Cửa hàng
         icon {
             imageIconCssClasses: fa-shopping-bag
         }
@@ -153,7 +153,7 @@ list application-actions (
 )
 
 list navigation-bar (
-    name: Navigation Bar
+    name: Thanh điều hướng
 
     entry app-user (
         label: &APP_USER.
@@ -175,7 +175,7 @@ list navigation-bar (
     )
 
     entry install-app (
-        label: Install App
+        label: Cài đặt ứng dụng
         icon {
             imageIconCssClasses: fa-cloud-download
         }
@@ -197,7 +197,7 @@ list navigation-bar (
     )
 
     entry sign-out (
-        label: Sign Out
+        label: Đăng xuất
         layout {
             sequence: 30
             parentEntry: @app-user
@@ -213,10 +213,10 @@ list navigation-bar (
 )
 
 list navigation-menu (
-    name: Navigation Menu
+    name: Menu điều hướng
 
     entry administration (
-        label: Administration
+        label: Quản trị
         icon {
             imageIconCssClasses: fa-gear
         }
@@ -251,7 +251,7 @@ list navigation-menu (
     )
 
     entry dashboard (
-        label: Dashboard
+        label: Bảng điều khiển
         icon {
             imageIconCssClasses: fa-line-chart
         }
@@ -266,7 +266,7 @@ list navigation-menu (
     )
 
     entry home (
-        label: Home
+        label: Trang chủ
         icon {
             imageIconCssClasses: fa-home
         }
@@ -288,7 +288,7 @@ list navigation-menu (
     )
 
     entry products-products (
-        label: "Products [&PRODUCTS.]"
+        label: "Sản phẩm [&PRODUCTS.]"
         icon {
             imageIconCssClasses: fa-archive
         }
@@ -310,7 +310,7 @@ list navigation-menu (
     )
 
     entry reports (
-        label: Reports
+        label: Báo cáo
         icon {
             imageIconCssClasses: fa-file-o
         }
@@ -344,7 +344,7 @@ list navigation-menu (
     )
 
     entry stores-stores (
-        label: "Stores [&STORES.]"
+        label: "Cửa hàng [&STORES.]"
         icon {
             imageIconCssClasses: fa-cart-full
         }
@@ -368,7 +368,7 @@ list navigation-menu (
     )
 
     entry transactions (
-        label: Transactions
+        label: Giao dịch
         icon {
             imageIconCssClasses: fa-credit-card
         }
@@ -400,7 +400,7 @@ list reports (
     name: reports
 
     entry products-available-by-store (
-        label: Products Available by Store
+        label: Sản phẩm khả dụng theo cửa hàng
         icon {
             imageIconCssClasses: fa-archive
         }
@@ -420,7 +420,7 @@ list reports (
     )
 
     entry sales-by-product-and-region-by-week (
-        label: Sales by Product and Region by Week
+        label: Doanh số theo sản phẩm và khu vực theo tuần
         icon {
             imageIconCssClasses: fa-dollar
         }
@@ -440,7 +440,7 @@ list reports (
     )
 
     entry sales-by-region-by-week (
-        label: Sales by Region by Week
+        label: Doanh số theo khu vực theo tuần
         icon {
             imageIconCssClasses: fa-dollar
         }
@@ -460,7 +460,7 @@ list reports (
     )
 
     entry sales-by-store-by-day (
-        label: Sales by Store by Day
+        label: Doanh số theo cửa hàng theo ngày
         icon {
             imageIconCssClasses: fa-calendar
         }
@@ -480,7 +480,7 @@ list reports (
     )
 
     entry table-row-counts (
-        label: Table Row Counts
+        label: Số lượng dòng bảng
         icon {
             imageIconCssClasses: fa-table
         }
@@ -502,10 +502,10 @@ list reports (
 )
 
 list reset-sample-data-list (
-    name: reset sample data LIST
+    name: Danh sách đặt lại dữ liệu mẫu
 
     entry reset-data-to-2xl (
-        label: Reset Data to 2XL
+        label: Đặt lại dữ liệu mức 2XL
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -524,7 +524,7 @@ list reset-sample-data-list (
     )
 
     entry reset-data-to-3xl (
-        label: Reset Data to 3XL
+        label: Đặt lại dữ liệu mức 3XL
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -543,7 +543,7 @@ list reset-sample-data-list (
     )
 
     entry reset-data-to-4xl (
-        label: Reset Data to 4XL
+        label: Đặt lại dữ liệu mức 4XL
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -562,7 +562,7 @@ list reset-sample-data-list (
     )
 
     entry reset-data-to-5xl (
-        label: Reset Data to 5XL
+        label: Đặt lại dữ liệu mức 5XL
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -581,7 +581,7 @@ list reset-sample-data-list (
     )
 
     entry reset-data-to-l (
-        label: Reset Data to L
+        label: Đặt lại dữ liệu mức L
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -600,7 +600,7 @@ list reset-sample-data-list (
     )
 
     entry reset-data-to-m (
-        label: Reset Data to M
+        label: Đặt lại dữ liệu mức M
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -619,7 +619,7 @@ list reset-sample-data-list (
     )
 
     entry reset-data-to-s (
-        label: Reset Data to S
+        label: Đặt lại dữ liệu mức S
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -638,7 +638,7 @@ list reset-sample-data-list (
     )
 
     entry reset-data-to-xl (
-        label: Reset Data to XL
+        label: Đặt lại dữ liệu mức XL
         icon {
             imageIconCssClasses: fa-cog
         }
@@ -659,10 +659,10 @@ list reset-sample-data-list (
 )
 
 list settings (
-    name: Settings
+    name: Cài đặt
 
     entry activity-calendar (
-        label: Activity Calendar
+        label: Lịch hoạt động
         icon {
             imageIconCssClasses: fa-calendar
         }
@@ -682,7 +682,7 @@ list settings (
     )
 
     entry build-options (
-        label: Build Options
+        label: Tùy chọn build
         icon {
             imageIconCssClasses: fa-check-square-o
         }
@@ -702,7 +702,7 @@ list settings (
     )
 
     entry event-log (
-        label: Event Log
+        label: Nhật ký sự kiện
         icon {
             imageIconCssClasses: fa-table
         }
@@ -722,7 +722,7 @@ list settings (
     )
 
     entry page-views (
-        label: Page Views
+        label: Lượt xem trang
         icon {
             imageIconCssClasses: fa-analytics
         }
@@ -742,7 +742,7 @@ list settings (
     )
 
     entry theme-style (
-        label: Theme Style
+        label: Kiểu giao diện
         icon {
             imageIconCssClasses: fa-desktop
         }
@@ -762,7 +762,7 @@ list settings (
     )
 
     entry top-users (
-        label: Top Users
+        label: Người dùng hàng đầu
         icon {
             imageIconCssClasses: fa-line-chart
         }
@@ -783,10 +783,10 @@ list settings (
 )
 
 list transaction-reports (
-    name: Transaction Reports
+    name: Báo cáo giao dịch
 
     entry api-calls-per-hour (
-        label: API Calls Per Hour
+        label: Lượt gọi API theo giờ
         icon {
             imageIconCssClasses: fa-file-o
         }
@@ -806,7 +806,7 @@ list transaction-reports (
     )
 
     entry api-calls-per-minute (
-        label: API Calls Per Minute
+        label: Lượt gọi API theo phút
         icon {
             imageIconCssClasses: fa-file-o
         }
@@ -824,7 +824,7 @@ list transaction-reports (
     )
 
     entry transactions-log (
-        label: Transactions Log
+        label: Nhật ký giao dịch
         icon {
             imageIconCssClasses: fa-file-o
         }
@@ -845,10 +845,10 @@ list transaction-reports (
 )
 
 list transactions (
-    name: Transactions
+    name: Giao dịch
 
     entry generate-100-transactions-on-page-load (
-        label: Generate 100 Transactions on Page Load
+        label: Tạo 100 giao dịch khi tải trang
         icon {
             imageIconCssClasses: fa-gear
         }
@@ -867,7 +867,7 @@ list transactions (
     )
 
     entry generate-transaction-on-button-click (
-        label: Generate Transaction on Button Click
+        label: Tạo giao dịch khi bấm nút
         icon {
             imageIconCssClasses: fa-gear
         }
@@ -885,7 +885,7 @@ list transactions (
     )
 
     entry generate-transaction-on-page-load (
-        label: Generate Transaction on Page Load
+        label: Tạo giao dịch khi tải trang
         icon {
             imageIconCssClasses: fa-gear
         }
@@ -903,7 +903,7 @@ list transactions (
     )
 
     entry remove-transaction-history (
-        label: Remove Transaction History
+        label: Xóa lịch sử giao dịch
         icon {
             imageIconCssClasses: fa-trash-o
         }
@@ -921,7 +921,7 @@ list transactions (
     )
 
     entry reset-sample-data (
-        label: Reset Sample Data
+        label: Đặt lại dữ liệu mẫu
         icon {
             imageIconCssClasses: fa-gear
         }
@@ -941,13 +941,13 @@ list transactions (
 )
 
 list user-interface (
-    name: User Interface
+    name: Giao diện người dùng
     config {
         buildOption: @feature-theme-style-selection
     }
 
     entry theme-style-selection (
-        label: Theme Style Selection
+        label: Chọn kiểu giao diện
         icon {
             imageIconCssClasses: fa-paint-brush
         }
@@ -966,4 +966,3 @@ list user-interface (
     )
 
 )
-

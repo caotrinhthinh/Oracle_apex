@@ -1,7 +1,7 @@
 page 41 (
-    name: Load Data
+    name: Tải dữ liệu
     alias: LOAD-DATA
-    title: Load Data
+    title: Tải dữ liệu
     appearance {
         pageTemplate: @/standard
         templateOptions: #DEFAULT#
@@ -103,7 +103,7 @@ page 41 (
             reportColumnQueryId: 3
             derivedColumn: N
             heading {
-                heading: Distinct Products
+                heading: Sản phẩm phân biệt
                 alignment: end
             }
             layout {
@@ -119,7 +119,7 @@ page 41 (
             reportColumnQueryId: 2
             derivedColumn: N
             heading {
-                heading: Distinct Stores
+                heading: Cửa hàng phân biệt
                 alignment: end
             }
             layout {
@@ -135,7 +135,7 @@ page 41 (
             reportColumnQueryId: 7
             derivedColumn: N
             heading {
-                heading: Load Time Milliseconds
+                heading: Thời gian tải (mili giây)
                 alignment: center
             }
             layout {
@@ -150,7 +150,7 @@ page 41 (
             reportColumnQueryId: 8
             derivedColumn: N
             heading {
-                heading: Load Time Seconds
+                heading: Thời gian tải (giây)
                 alignment: center
             }
             layout {
@@ -165,7 +165,7 @@ page 41 (
             reportColumnQueryId: 6
             derivedColumn: N
             heading {
-                heading: Requested Orders
+                heading: Đơn hàng yêu cầu
                 alignment: center
             }
             layout {
@@ -180,7 +180,7 @@ page 41 (
             reportColumnQueryId: 4
             derivedColumn: N
             heading {
-                heading: Requested Size
+                heading: Kích thước yêu cầu
             }
             layout {
                 sequence: 20
@@ -191,7 +191,7 @@ page 41 (
             reportColumnQueryId: 1
             derivedColumn: N
             heading {
-                heading: Rows Generated
+                heading: Số dòng đã tạo
             }
             layout {
                 sequence: 40
@@ -205,7 +205,7 @@ page 41 (
             reportColumnQueryId: 9
             derivedColumn: N
             heading {
-                heading: Rows Loaded Per Second
+                heading: Số dòng tải mỗi giây
                 alignment: center
             }
             layout {
@@ -220,7 +220,7 @@ page 41 (
             reportColumnQueryId: 5
             derivedColumn: N
             heading {
-                heading: Rows Requested
+                heading: Số dòng yêu cầu
                 alignment: center
             }
             layout {
@@ -265,7 +265,7 @@ page 41 (
             reportColumnQueryId: 1
             derivedColumn: N
             heading {
-                heading: Last Order
+                heading: Đơn hàng gần nhất
             }
             layout {
                 sequence: 10
@@ -339,7 +339,7 @@ page 41 (
 
     button reload (
         buttonName: Reload
-        label: Reload Data
+        label: Tải lại dữ liệu
         layout {
             sequence: 10
             region: @breadcrumb
@@ -361,7 +361,7 @@ page 41 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -489,4 +489,3 @@ page 41 (
     )
 
 )
-

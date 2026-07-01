@@ -1,7 +1,7 @@
 page 39 (
-    name: Page Views
+    name: Lượt xem trang
     alias: PAGE-VIEWS
-    title: Page Views
+    title: Lượt xem trang
     appearance {
         pageTemplate: @/standard
         templateOptions: #DEFAULT#
@@ -76,8 +76,8 @@ page 39 (
             type: rowRangesXToY
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Số dòng tối đa cho báo cáo này là #MAX_ROW_COUNT# dòng. Vui lòng áp dụng bộ lọc để giảm số lượng bản ghi trong truy vấn.
         }
         advanced {
             savedReportMappingIdentifier: 5562142418051774770
@@ -86,7 +86,7 @@ page 39 (
         column ELAPSED (
             type: plainText
             heading {
-                heading: Elapsed
+                heading: Thời gian trôi qua
                 alignment: end
             }
             layout {
@@ -107,7 +107,7 @@ page 39 (
         column NUM_ROWS (
             type: plainText
             heading {
-                heading: Num Rows
+                heading: Số dòng
                 alignment: end
             }
             layout {
@@ -128,7 +128,7 @@ page 39 (
         column PAGE (
             type: plainText
             heading {
-                heading: Page
+                heading: Trang
                 alignment: end
             }
             layout {
@@ -146,7 +146,7 @@ page 39 (
         column PAGE_MODE (
             type: plainText
             heading {
-                heading: Page Mode
+                heading: Chế độ trang
             }
             layout {
                 sequence: 42
@@ -162,7 +162,7 @@ page 39 (
         column PAGE_NAME (
             type: plainText
             heading {
-                heading: Page Name
+                heading: Tên trang
             }
             layout {
                 sequence: 2
@@ -196,7 +196,7 @@ page 39 (
         column TIME_STAMP (
             type: plainText
             heading {
-                heading: Time Stamp
+                heading: Mốc thời gian
             }
             layout {
                 sequence: 52
@@ -215,7 +215,7 @@ page 39 (
         column TIME_STAMP_SINCE (
             type: plainText
             heading {
-                heading: Date
+                heading: Ngày
             }
             layout {
                 sequence: 62
@@ -234,7 +234,7 @@ page 39 (
         column USERNAME (
             type: plainText
             heading {
-                heading: Username
+                heading: Tên đăng nhập
             }
             layout {
                 sequence: 72
@@ -319,7 +319,7 @@ page 39 (
 
     button page-performance (
         buttonName: page_performance
-        label: Page Performance
+        label: Hiệu năng trang
         layout {
             sequence: 10
             region: @breadcrumb
@@ -344,7 +344,7 @@ page 39 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -368,4 +368,3 @@ page 39 (
     )
 
 )
-

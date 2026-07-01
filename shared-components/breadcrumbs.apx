@@ -1,8 +1,8 @@
 breadcrumb breadcrumb (
-    name: " Breadcrumb"
+    name: " Điều hướng"
 
     entry about (
-        name: About
+        name: Giới thiệu
         pageNumber: 14
         execution {
             sequence: 10
@@ -15,7 +15,7 @@ breadcrumb breadcrumb (
     )
 
     entry activity-calendar (
-        name: Activity Calendar
+        name: Lịch hoạt động
         pageNumber: 17
         execution {
             sequence: 10
@@ -28,7 +28,7 @@ breadcrumb breadcrumb (
     )
 
     entry administration (
-        name: Administration
+        name: Quản trị
         pageNumber: 4
         execution {
             sequence: 10
@@ -41,7 +41,7 @@ breadcrumb breadcrumb (
     )
 
     entry event-log (
-        name: Event Log
+        name: Nhật ký sự kiện
         pageNumber: 21
         execution {
             sequence: 10
@@ -54,7 +54,7 @@ breadcrumb breadcrumb (
     )
 
     entry generate-transaction (
-        name: Generate Transaction
+        name: Tạo giao dịch
         pageNumber: 29
         execution {
             sequence: 10
@@ -67,7 +67,7 @@ breadcrumb breadcrumb (
     )
 
     entry generate-transactions (
-        name: Generate Transactions
+        name: Tạo giao dịch
         pageNumber: 28
         execution {
             sequence: 10
@@ -80,7 +80,7 @@ breadcrumb breadcrumb (
     )
 
     entry home (
-        name: Home
+        name: Trang chủ
         pageNumber: 1
         execution {
             sequence: 10
@@ -93,7 +93,7 @@ breadcrumb breadcrumb (
     )
 
     entry load-data-results (
-        name: Load Data Results
+        name: Kết quả tải dữ liệu
         pageNumber: 41
         execution {
             sequence: 10
@@ -106,7 +106,7 @@ breadcrumb breadcrumb (
     )
 
     entry p15-region-name-region (
-        name: &P15_REGION_NAME. Region
+        name: &P15_REGION_NAME. Khu vực
         pageNumber: 15
         execution {
             sequence: 10
@@ -145,7 +145,7 @@ breadcrumb breadcrumb (
     )
 
     entry page-views (
-        name: Page Views
+        name: Lượt xem trang
         pageNumber: 39
         execution {
             sequence: 10
@@ -158,7 +158,7 @@ breadcrumb breadcrumb (
     )
 
     entry product (
-        name: Product
+        name: Sản phẩm
         pageNumber: 12
         execution {
             sequence: 10
@@ -174,7 +174,7 @@ breadcrumb breadcrumb (
     )
 
     entry product-availability-by-store (
-        name: Product Availability by Store
+        name: Tình trạng sẵn có sản phẩm theo cửa hàng
         pageNumber: 27
         execution {
             sequence: 10
@@ -187,7 +187,7 @@ breadcrumb breadcrumb (
     )
 
     entry products (
-        name: Products
+        name: Sản phẩm
         pageNumber: 11
         execution {
             sequence: 10
@@ -201,7 +201,7 @@ breadcrumb breadcrumb (
     )
 
     entry recent-sales (
-        name: Recent Sales
+        name: Doanh số gần đây
         pageNumber: 43
         execution {
             sequence: 10
@@ -217,7 +217,7 @@ breadcrumb breadcrumb (
     )
 
     entry region (
-        name: Region
+        name: Khu vực
         pageNumber: 9
         execution {
             sequence: 10
@@ -233,7 +233,7 @@ breadcrumb breadcrumb (
     )
 
     entry regions (
-        name: Regions
+        name: Khu vực
         pageNumber: 8
         execution {
             sequence: 10
@@ -246,7 +246,7 @@ breadcrumb breadcrumb (
     )
 
     entry remove-transaction-history (
-        name: Remove Transaction History
+        name: Xóa lịch sử giao dịch
         pageNumber: 26
         execution {
             sequence: 10
@@ -259,7 +259,7 @@ breadcrumb breadcrumb (
     )
 
     entry reports (
-        name: Reports
+        name: Báo cáo
         pageNumber: 19
         execution {
             sequence: 10
@@ -272,7 +272,7 @@ breadcrumb breadcrumb (
     )
 
     entry reset-sample-data (
-        name: Reset Sample Data
+        name: Đặt lại dữ liệu mẫu
         pageNumber: 40
         execution {
             sequence: 10
@@ -285,7 +285,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-by-product-and-region-by-week (
-        name: Sales by Product and Region by Week
+        name: Doanh số theo sản phẩm và khu vực theo tuần
         pageNumber: 25
         execution {
             sequence: 10
@@ -298,7 +298,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-by-region-by-week (
-        name: Sales by Region by Week
+        name: Doanh số theo khu vực theo tuần
         pageNumber: 22
         execution {
             sequence: 10
@@ -311,7 +311,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-by-store-by-day (
-        name: Sales by Store by Day
+        name: Doanh số theo cửa hàng theo ngày
         pageNumber: 20
         execution {
             sequence: 10
@@ -324,7 +324,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-dashboard (
-        name: Sales Dashboard
+        name: Bảng điều khiển doanh số
         pageNumber: 5
         execution {
             sequence: 10
@@ -337,7 +337,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 2
         execution {
             sequence: 10
@@ -350,7 +350,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-2 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 38
         execution {
             sequence: 10
@@ -363,7 +363,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-3 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 50
         execution {
             sequence: 10
@@ -377,7 +377,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-4 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 51
         execution {
             sequence: 10
@@ -390,7 +390,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-5 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 45
         execution {
             sequence: 10
@@ -403,7 +403,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-6 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 46
         execution {
             sequence: 10
@@ -416,7 +416,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-7 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 23
         execution {
             sequence: 10
@@ -429,7 +429,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-8 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 42
         execution {
             sequence: 10
@@ -442,7 +442,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-9 (
-        name: Sales History
+        name: Lịch sử doanh số
         pageNumber: 13
         execution {
             sequence: 10
@@ -455,7 +455,7 @@ breadcrumb breadcrumb (
     )
 
     entry sales-history-generation-log (
-        name: Sales History Generation Log
+        name: Nhật ký tạo lịch sử doanh số
         pageNumber: 24
         execution {
             sequence: 10
@@ -471,7 +471,7 @@ breadcrumb breadcrumb (
     )
 
     entry store (
-        name: Store
+        name: Cửa hàng
         pageNumber: 7
         execution {
             sequence: 10
@@ -484,7 +484,7 @@ breadcrumb breadcrumb (
     )
 
     entry stores (
-        name: Stores
+        name: Cửa hàng
         pageNumber: 6
         execution {
             sequence: 10
@@ -497,7 +497,7 @@ breadcrumb breadcrumb (
     )
 
     entry table-counts (
-        name: Table Counts
+        name: Số lượng bảng
         pageNumber: 32
         execution {
             sequence: 10
@@ -510,7 +510,7 @@ breadcrumb breadcrumb (
     )
 
     entry top-users (
-        name: Top Users
+        name: Người dùng hàng đầu
         pageNumber: 16
         execution {
             sequence: 10
@@ -523,7 +523,7 @@ breadcrumb breadcrumb (
     )
 
     entry transaction (
-        name: Transaction
+        name: Giao dịch
         pageNumber: 30
         execution {
             sequence: 10
@@ -536,7 +536,7 @@ breadcrumb breadcrumb (
     )
 
     entry transaction-details (
-        name: Transaction Details
+        name: Chi tiết giao dịch
         pageNumber: 31
         execution {
             sequence: 10
@@ -549,7 +549,7 @@ breadcrumb breadcrumb (
     )
 
     entry transaction-log (
-        name: Transaction Log
+        name: Nhật ký giao dịch
         pageNumber: 33
         execution {
             sequence: 10
@@ -562,7 +562,7 @@ breadcrumb breadcrumb (
     )
 
     entry transaction-summary-by-hour (
-        name: Transaction Summary by Hour
+        name: Tổng hợp giao dịch theo giờ
         pageNumber: 35
         execution {
             sequence: 10
@@ -575,7 +575,7 @@ breadcrumb breadcrumb (
     )
 
     entry transaction-summary-by-minute (
-        name: Transaction Summary by Minute
+        name: Tổng hợp giao dịch theo phút
         pageNumber: 34
         execution {
             sequence: 10
@@ -588,4 +588,3 @@ breadcrumb breadcrumb (
     )
 
 )
-

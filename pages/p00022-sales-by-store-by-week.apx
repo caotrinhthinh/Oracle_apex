@@ -1,7 +1,7 @@
 page 22 (
-    name: Sales by Store by Week
+    name: Doanh số theo cửa hàng theo tuần
     alias: SALES-BY-STORE-BY-WEEK
-    title: Sales by Store by Week
+    title: Doanh số theo cửa hàng theo tuần
     pageGroup: @reporting
     appearance {
         pageTemplate: @/standard
@@ -93,8 +93,8 @@ page 22 (
             maxRowsToProcess: 100000
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: This query returns more than #MAX_ROW_COUNT# rows, please filter your data to ensure complete results.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
         }
         actionsMenu {
             savePublicReport: true
@@ -112,7 +112,7 @@ page 22 (
         column R1_TOTAL_SALE (
             type: plainText
             heading {
-                heading: &R1. Total Sale
+                heading: &R1. Total Bán hàng
                 alignment: end
             }
             layout {
@@ -154,7 +154,7 @@ page 22 (
         column R2_TOTAL_SALE (
             type: plainText
             heading {
-                heading: &R2. Total Sale
+                heading: &R2. Total Bán hàng
                 alignment: end
             }
             layout {
@@ -196,7 +196,7 @@ page 22 (
         column R3_TOTAL_SALE (
             type: plainText
             heading {
-                heading: &R3. Total Sale
+                heading: &R3. Total Bán hàng
                 alignment: end
             }
             layout {
@@ -238,7 +238,7 @@ page 22 (
         column YYYY_W (
             type: plainText
             heading {
-                heading: Week
+                heading: Tuần
                 alignment: center
             }
             layout {
@@ -310,9 +310,162 @@ page 22 (
 
     )
 
+    region top-10-weeks-by-revenue (
+        name: Top 10 tuần doanh thu cao nhất
+        type: interactiveReport
+        source {
+            location: localDatabase
+            type: sqlQuery
+            sqlQuery:
+                ```sql
+                select
+                    to_char(sh.date_of_sale, 'YYYY.WW') yyyy_w,
+                    to_char(sh.date_of_sale, 'YYYY.MM') the_month,
+                    sum(sh.item_price * sh.quantity) total_sale,
+                    sum(sh.quantity) total_units
+                from oow_demo_sales_history sh
+                where :P22_THE_MONTH is null
+                   or to_char(sh.date_of_sale, 'YYYY.MM') = :P22_THE_MONTH
+                group by to_char(sh.date_of_sale, 'YYYY.WW'),
+                         to_char(sh.date_of_sale, 'YYYY.MM')
+                order by total_sale desc
+                fetch first 10 rows only
+                ```
+        }
+        layout {
+            sequence: 30
+            slot: body
+        }
+        appearance {
+            template: @/interactive-report
+            templateOptions: #DEFAULT#
+        }
+        advanced {
+            regionDisplaySelector: true
+        }
+        componentAppearance {
+            showNullValuesAs: -
+        }
+        pagination {
+            type: rowRangesXToY
+        }
+        performance {
+            maxRowsToProcess: 100000
+        }
+        messages {
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
+        }
+        actionsMenu {
+            savePublicReport: true
+        }
+        download {
+            formats: [
+                csv
+                html
+            ]
+        }
+
+        column THE_MONTH (
+            type: plainText
+            heading {
+                heading: Tháng
+                alignment: center
+            }
+            layout {
+                sequence: 10
+            }
+            source {
+                dataType: STRING
+            }
+        )
+
+        column TOTAL_SALE (
+            type: plainText
+            heading {
+                heading: Tổng doanh số
+                alignment: end
+            }
+            layout {
+                sequence: 30
+                columnAlignment: end
+            }
+            appearance {
+                formatMask: $999G999G999G999G999G990
+            }
+            source {
+                dataType: NUMBER
+            }
+        )
+
+        column TOTAL_UNITS (
+            type: plainText
+            heading {
+                heading: Tổng số lượng
+                alignment: end
+            }
+            layout {
+                sequence: 40
+                columnAlignment: end
+            }
+            appearance {
+                formatMask: 999G999G999G999G999G990
+            }
+            source {
+                dataType: NUMBER
+            }
+        )
+
+        column YYYY_W (
+            type: plainText
+            heading {
+                heading: Tuần
+                alignment: center
+            }
+            layout {
+                sequence: 20
+            }
+            source {
+                dataType: STRING
+            }
+        )
+
+    )
+
+    pageItem P22_THE_MONTH (
+        type: selectList
+        label {
+            label: Tháng
+            alignment: left
+        }
+        lov {
+            type: sqlQuery
+            sqlQuery:
+                ```sql
+                select distinct to_char(date_of_sale, 'YYYY.MM') d,
+                                to_char(date_of_sale, 'YYYY.MM') r
+                from oow_demo_sales_history
+                order by 1 desc
+                ```
+            displayNullValue: true
+            nullDisplayValue: Tất cả tháng
+        }
+        layout {
+            sequence: 30
+            region: @breadcrumb
+            slot: next
+            alignment: left
+        }
+        appearance {
+            template: @/optional
+            templateOptions: #DEFAULT#
+            height: 1
+        }
+    )
+
     button reset-report (
         buttonName: RESET_REPORT
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 10
             region: @sales-by-region-by-week
@@ -342,7 +495,7 @@ page 22 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -363,6 +516,26 @@ page 22 (
             }
             warnOnUnsavedChanges: doNotCheck
         }
+    )
+
+    dynamicAction refresh-top-10-report-on-month-change (
+        name: refresh top 10 report on month change
+        execution {
+            sequence: 20
+        }
+        when {
+            selectionType: items
+            items: P22_THE_MONTH
+        }
+
+        action native-submit-page (
+            action: submitPage
+            execution {
+                sequence: 10
+                fireOnInit: false
+            }
+        )
+
     )
 
     process set-regions (
@@ -396,4 +569,3 @@ page 22 (
     )
 
 )
-

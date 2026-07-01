@@ -1,7 +1,7 @@
 page 17 (
-    name: Activity Calendar
+    name: Lịch hoạt động
     alias: ACTIVITY-CALENDAR
-    title: Activity Calendar
+    title: Lịch hoạt động
     pageGroup: @administration
     appearance {
         pageTemplate: @/standard
@@ -91,7 +91,7 @@ page 17 (
 
     button refresh (
         buttonName: refresh
-        label: Refresh
+        label: Làm mới
         layout {
             sequence: 10
             region: @activity-calendar-2
@@ -119,7 +119,7 @@ page 17 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @activity-calendar-2
@@ -143,4 +143,3 @@ page 17 (
     )
 
 )
-

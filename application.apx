@@ -1,10 +1,10 @@
 app BROOKSTRUT (
-    name: Brookstrut Sample App
+    name: Ứng dụng mẫu Brookstrut
     version: 26.1.1
     group: @sample-applications
     logo {
         type: text
-        text: Brookstrut Sample App
+        text: Ứng dụng mẫu Brookstrut
     }
     navigation {
         homeUrl: {
@@ -92,9 +92,8 @@ app BROOKSTRUT (
 
     substitution APP_NAME (
         value {
-            staticValue: Brookstrut Sample App
+            staticValue: Ứng dụng mẫu Brookstrut
         }
     )
 
 )
-

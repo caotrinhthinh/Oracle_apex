@@ -1,5 +1,8 @@
 {
-  "app" : {
-    "id" : 110
-  }
+    "workspace": {
+        "name": "CONTRACT_DEV"
+    },
+    "app": {
+        "id": 110
+    }
 }

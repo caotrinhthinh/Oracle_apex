@@ -1,7 +1,7 @@
 page 14 (
-    name: About
+    name: Giới thiệu
     alias: ABOUT
-    title: About
+    title: Giới thiệu
     appearance {
         pageTemplate: @/standard
         templateOptions: #DEFAULT#
@@ -120,7 +120,7 @@ page 14 (
             reportColumnQueryId: 1
             derivedColumn: N
             heading {
-                heading: App version
+                heading: Phiên bản ứng dụng
             }
             layout {
                 sequence: 20
@@ -134,7 +134,7 @@ page 14 (
             reportColumnQueryId: 3
             derivedColumn: N
             heading {
-                heading: Authentication
+                heading: Xác thực
             }
             layout {
                 sequence: 40
@@ -145,7 +145,7 @@ page 14 (
             reportColumnQueryId: 4
             derivedColumn: N
             heading {
-                heading: Build Status
+                heading: Trạng thái build
             }
             layout {
                 sequence: 50
@@ -156,7 +156,7 @@ page 14 (
             reportColumnQueryId: 6
             derivedColumn: N
             heading {
-                heading: Compatibility Mode
+                heading: Chế độ tương thích
                 alignment: center
             }
             layout {
@@ -168,7 +168,7 @@ page 14 (
             reportColumnQueryId: 5
             derivedColumn: N
             heading {
-                heading: Friendly URLs
+                heading: URL thân thiện
             }
             layout {
                 sequence: 60
@@ -179,7 +179,7 @@ page 14 (
             reportColumnQueryId: 2
             derivedColumn: N
             heading {
-                heading: Pages
+                heading: Các trang
                 alignment: end
             }
             layout {
@@ -194,7 +194,7 @@ page 14 (
             reportColumnQueryId: 7
             derivedColumn: N
             heading {
-                heading: Vendor
+                heading: Nhà cung cấp
             }
             layout {
                 sequence: 10
@@ -285,7 +285,7 @@ page 14 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -321,4 +321,3 @@ page 14 (
     )
 
 )
-

@@ -1,7 +1,7 @@
 page 36 (
-    name: Transaction Detail
+    name: Chi tiết giao dịch
     alias: TRANSACTION-DETAIL
-    title: Transaction Detail
+    title: Chi tiết giao dịch
     appearance {
         pageMode: modalDialog
         dialogTemplate: @/drawer
@@ -75,7 +75,7 @@ page 36 (
             reportColumnQueryId: 4
             derivedColumn: N
             heading {
-                heading: Line Items
+                heading: Dòng mặt hàng
                 alignment: end
             }
             layout {
@@ -91,7 +91,7 @@ page 36 (
             reportColumnQueryId: 2
             derivedColumn: N
             heading {
-                heading: Products
+                heading: Sản phẩm
                 alignment: end
             }
             layout {
@@ -107,7 +107,7 @@ page 36 (
             reportColumnQueryId: 1
             derivedColumn: N
             heading {
-                heading: Stores
+                heading: Các cửa hàng
                 alignment: end
             }
             layout {
@@ -123,7 +123,7 @@ page 36 (
             reportColumnQueryId: 3
             derivedColumn: N
             heading {
-                heading: Transaction Amount
+                heading: Giá trị giao dịch
                 alignment: end
             }
             layout {
@@ -204,7 +204,7 @@ page 36 (
             reportColumnQueryId: 7
             derivedColumn: N
             heading {
-                heading: Item Price
+                heading: Giá mặt hàng
                 alignment: end
             }
             layout {
@@ -220,7 +220,7 @@ page 36 (
             reportColumnQueryId: 5
             derivedColumn: N
             heading {
-                heading: Product
+                heading: Sản phẩm
             }
             layout {
                 sequence: 70
@@ -240,7 +240,7 @@ page 36 (
             reportColumnQueryId: 6
             derivedColumn: N
             heading {
-                heading: Quantity
+                heading: Số lượng
                 alignment: end
             }
             layout {
@@ -259,7 +259,7 @@ page 36 (
             reportColumnQueryId: 3
             derivedColumn: N
             heading {
-                heading: Store
+                heading: Cửa hàng
             }
             layout {
                 sequence: 50
@@ -279,7 +279,7 @@ page 36 (
             reportColumnQueryId: 8
             derivedColumn: N
             heading {
-                heading: Transaction Amount
+                heading: Giá trị giao dịch
                 alignment: end
             }
             layout {
@@ -299,7 +299,7 @@ page 36 (
     pageItem P36_TRANSACTION_DATE (
         type: displayOnly
         label {
-            label: Transaction Date
+            label: Ngày giao dịch
             alignment: left
         }
         layout {
@@ -320,7 +320,7 @@ page 36 (
     pageItem P36_TRANSACTION_ENTRY_ID (
         type: displayOnly
         label {
-            label: Transaction Line Item ID
+            label: ID dòng giao dịch
             alignment: left
         }
         layout {
@@ -341,7 +341,7 @@ page 36 (
     pageItem P36_TRANSACTION_ID (
         type: displayOnly
         label {
-            label: Transaction ID
+            label: ID giao dịch
             alignment: left
         }
         layout {
@@ -392,4 +392,3 @@ page 36 (
     )
 
 )
-

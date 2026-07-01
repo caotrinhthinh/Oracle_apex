@@ -1,7 +1,7 @@
 page 33 (
-    name: Transaction Log
+    name: Nhật ký giao dịch
     alias: TRANSACTION-LOG
-    title: Transaction Log
+    title: Nhật ký giao dịch
     pageGroup: @reporting
     appearance {
         pageTemplate: @/standard
@@ -86,8 +86,8 @@ page 33 (
             maxRowsToProcess: 100000
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: This query returns more than #MAX_ROW_COUNT# rows, please filter your data to ensure complete results.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
         }
         actionsMenu {
             savePublicReport: true
@@ -105,7 +105,7 @@ page 33 (
         column ELAPSED_SECONDS (
             type: plainText
             heading {
-                heading: Elapsed Seconds
+                heading: Số giây trôi qua
                 alignment: end
             }
             layout {
@@ -126,7 +126,7 @@ page 33 (
         column END_TIME (
             type: plainText
             heading {
-                heading: End Time
+                heading: Thời gian kết thúc
             }
             layout {
                 sequence: 6
@@ -143,7 +143,7 @@ page 33 (
         column END_TIME_SINCE (
             type: plainText
             heading {
-                heading: Last Action
+                heading: Hành động gần nhất
             }
             layout {
                 sequence: 28
@@ -180,7 +180,7 @@ page 33 (
         column MAX_ORDERS (
             type: plainText
             heading {
-                heading: Max Orders
+                heading: Đơn hàng tối đa
                 alignment: end
             }
             layout {
@@ -198,7 +198,7 @@ page 33 (
         column NUM_DAYS (
             type: plainText
             heading {
-                heading: Num Days
+                heading: Số ngày
                 alignment: end
             }
             layout {
@@ -216,7 +216,7 @@ page 33 (
         column OWNER (
             type: plainText
             heading {
-                heading: Owner
+                heading: Chủ sở hữu
             }
             layout {
                 sequence: 2
@@ -232,7 +232,7 @@ page 33 (
         column ROWS_PER_SECOND (
             type: plainText
             heading {
-                heading: Rows Per Second
+                heading: Số dòng mỗi giây
                 alignment: end
             }
             layout {
@@ -253,7 +253,7 @@ page 33 (
         column ROW_COUNT (
             type: plainText
             heading {
-                heading: New Rows
+                heading: Dòng mới
                 alignment: end
             }
             layout {
@@ -339,7 +339,7 @@ page 33 (
 
     button reset-report (
         buttonName: RESET_REPORT
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 10
             region: @transaction-generation-log
@@ -368,7 +368,7 @@ page 33 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -392,4 +392,3 @@ page 33 (
     )
 
 )
-

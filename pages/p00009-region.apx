@@ -1,7 +1,7 @@
 page 9 (
-    name: Region
+    name: Khu vực
     alias: REGION
-    title: Region
+    title: Khu vực
     pageGroup: @regions
     appearance {
         pageMode: modalDialog
@@ -28,7 +28,7 @@ page 9 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region buttonbar (
@@ -80,7 +80,7 @@ page 9 (
     pageItem P9_REGION_NAME (
         type: textField
         label {
-            label: Region Name
+            label: Tên khu vực
             alignment: left
         }
         settings {
@@ -110,7 +110,7 @@ page 9 (
 
     button cancel (
         buttonName: CANCEL
-        label: Cancel
+        label: Hủy
         layout {
             sequence: 10
             region: @buttonbar
@@ -127,7 +127,7 @@ page 9 (
 
     button create (
         buttonName: CREATE
-        label: Add Region
+        label: Thêm khu vực
         layout {
             sequence: 40
             region: @buttonbar
@@ -150,7 +150,7 @@ page 9 (
 
     button delete (
         buttonName: DELETE
-        label: Delete
+        label: Xóa
         layout {
             sequence: 20
             region: @buttonbar
@@ -175,7 +175,7 @@ page 9 (
 
     button save (
         buttonName: SAVE
-        label: Apply Changes
+        label: Áp dụng thay đổi
         layout {
             sequence: 30
             region: @buttonbar
@@ -279,4 +279,3 @@ page 9 (
     )
 
 )
-

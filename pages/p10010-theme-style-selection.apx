@@ -1,7 +1,7 @@
 page 10010 (
-    name: Theme Style Selection
+    name: Chọn kiểu giao diện
     alias: THEME-STYLE-SELECTION
-    title: Theme Style Selection
+    title: Chọn kiểu giao diện
     pageGroup: @administration
     appearance {
         pageMode: modalDialog
@@ -59,7 +59,7 @@ page 10010 (
     pageItem P10010_DESKTOP_THEME_STYLE_ID (
         type: selectList
         label {
-            label: Desktop Theme Style
+            label: Kiểu giao diện Desktop
             alignment: left
         }
         lov {
@@ -120,7 +120,7 @@ page 10010 (
     pageItem P10010_END_USER_STYLE (
         type: checkboxGroup
         label {
-            label: End User Theme Preference
+            label: Tùy chọn giao diện người dùng
             alignment: left
         }
         lov {
@@ -156,7 +156,7 @@ page 10010 (
 
     button cancel (
         buttonName: CANCEL
-        label: Cancel
+        label: Hủy
         layout {
             sequence: 10
             region: @buttons
@@ -174,7 +174,7 @@ page 10010 (
 
     button save (
         buttonName: SAVE
-        label: Apply Changes
+        label: Áp dụng thay đổi
         layout {
             sequence: 20
             region: @buttons
@@ -294,4 +294,3 @@ page 10010 (
     )
 
 )
-

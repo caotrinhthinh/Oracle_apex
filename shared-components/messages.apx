@@ -1,84 +1,83 @@
 textMessage ADMINISTRATION (
     message {
-        text: Administration
+        text: Quản trị
         language: en
     }
 )
 
 textMessage HELP (
     message {
-        text: Help
+        text: Trợ giúp
         language: en
     }
 )
 
 textMessage HELP_SIDEBAR (
     message {
-        text: <h1 class="appNameHeader"> <img src="%0f_spacer.gif" class="appIcon %1" alt="" /> %2 </h1> <ul class="vapList"> <li> <span class="vLabel">App Version</span> <span class="vValue">%3</span> </li> <li> <span class="vLabel">Pages</span> <span class="vValue">%4</span> </li> <li> <span class="vLabel">Vendor</span> <span class="vValue">%5 </span> </li> </ul>
+        text: <h1 class="appNameHeader"> <img src="%0f_spacer.gif" class="appIcon %1" alt="" /> %2 </h1> <ul class="vapList"> <li> <span class="vLabel">Phiên bản ứng dụng</span> <span class="vValue">%3</span> </li> <li> <span class="vLabel">Trang</span> <span class="vValue">%4</span> </li> <li> <span class="vLabel">Nhà cung cấp</span> <span class="vValue">%5 </span> </li> </ul>
         language: en
     }
 )
 
 textMessage LOGOUT (
     message {
-        text: Logout
+        text: Đăng xuất
         language: en
     }
 )
 
 textMessage N_DAY (
     message {
-        text: %0 day
+        text: %0 ngày
         language: en
     }
 )
 
 textMessage N_DAYS (
     message {
-        text: %0 days
+        text: %0 ngày
         language: en
     }
 )
 
 textMessage N_HOUR (
     message {
-        text: %0 hour
+        text: %0 giờ
         language: en
     }
 )
 
 textMessage N_HOURS (
     message {
-        text: %0 hours
+        text: %0 giờ
         language: en
     }
 )
 
 textMessage N_MINUTES (
     message {
-        text: %0 minutes
+        text: %0 phút
         language: en
     }
 )
 
 textMessage N_WEEK (
     message {
-        text: %0 week
+        text: %0 tuần
         language: en
     }
 )
 
 textMessage N_WEEKS (
     message {
-        text: %0 weeks
+        text: %0 tuần
         language: en
     }
 )
 
 textMessage USER (
     message {
-        text: User
+        text: Người dùng
         language: en
     }
 )
-

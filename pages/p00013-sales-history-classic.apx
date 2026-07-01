@@ -1,7 +1,7 @@
 page 13 (
-    name: Sales History Classic
+    name: Lịch sử doanh số cổ điển
     alias: SALES-HISTORY-CLASSIC
-    title: Sales History - Classic
+    title: Lịch sử doanh số - Cổ điển
     pageGroup: @reporting
     appearance {
         pageTemplate: @/left-side-column
@@ -19,7 +19,7 @@ page 13 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region breadcrumb (
@@ -92,7 +92,7 @@ page 13 (
         facet P13_PRODUCT (
             type: checkboxGroup
             label {
-                label: Product
+                label: Sản phẩm
             }
             lov {
                 type: distinctValues
@@ -111,7 +111,7 @@ page 13 (
         facet P13_REGION (
             type: checkboxGroup
             label {
-                label: Region
+                label: Khu vực
             }
             lov {
                 type: distinctValues
@@ -130,7 +130,7 @@ page 13 (
         facet P13_SEARCH (
             type: search
             label {
-                label: Search
+                label: Tìm kiếm
             }
             layout {
                 sequence: 10
@@ -140,7 +140,7 @@ page 13 (
         facet P13_STORE (
             type: checkboxGroup
             label {
-                label: Store
+                label: Cửa hàng
             }
             lov {
                 type: distinctValues
@@ -159,7 +159,7 @@ page 13 (
         facet P13_THE_MONTH (
             type: checkboxGroup
             label {
-                label: Month
+                label: Tháng
             }
             lov {
                 type: distinctValues
@@ -245,7 +245,7 @@ page 13 (
             reportColumnQueryId: 5
             derivedColumn: N
             heading {
-                heading: Date of Sale
+                heading: Ngày bán
             }
             layout {
                 sequence: 60
@@ -268,7 +268,7 @@ page 13 (
             reportColumnQueryId: 9
             derivedColumn: N
             heading {
-                heading: Item Price
+                heading: Giá mặt hàng
                 alignment: end
             }
             layout {
@@ -284,7 +284,7 @@ page 13 (
             reportColumnQueryId: 4
             derivedColumn: N
             heading {
-                heading: Product
+                heading: Sản phẩm
             }
             layout {
                 sequence: 50
@@ -304,7 +304,7 @@ page 13 (
             reportColumnQueryId: 7
             derivedColumn: N
             heading {
-                heading: Quantity
+                heading: Số lượng
                 alignment: end
             }
             layout {
@@ -320,7 +320,7 @@ page 13 (
             reportColumnQueryId: 2
             derivedColumn: N
             heading {
-                heading: Region
+                heading: Khu vực
             }
             layout {
                 sequence: 30
@@ -331,7 +331,7 @@ page 13 (
             reportColumnQueryId: 10
             derivedColumn: N
             heading {
-                heading: Sale
+                heading: Bán hàng
                 alignment: end
             }
             layout {
@@ -347,7 +347,7 @@ page 13 (
             reportColumnQueryId: 3
             derivedColumn: N
             heading {
-                heading: Store
+                heading: Cửa hàng
             }
             layout {
                 sequence: 40
@@ -377,7 +377,7 @@ page 13 (
             derivedColumn: N
             type: link
             heading {
-                heading: Transaction ID
+                heading: ID giao dịch
             }
             layout {
                 sequence: 20
@@ -424,7 +424,7 @@ page 13 (
     pageItem P13_NAVIGATION (
         type: selectList
         label {
-            label: Navigation
+            label: Điều hướng
             alignment: left
         }
         lov {
@@ -451,7 +451,7 @@ page 13 (
 
     button reset (
         buttonName: reset
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 30
             region: @breadcrumb
@@ -479,7 +479,7 @@ page 13 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -552,4 +552,3 @@ page 13 (
     )
 
 )
-

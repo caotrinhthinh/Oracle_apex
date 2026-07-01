@@ -1,5 +1,5 @@
 page 1 (
-    name: Home
+    name: Trang chủ
     alias: HOME
     title: &APP_NAME.
     appearance {
@@ -17,7 +17,7 @@ page 1 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region application-actions (
@@ -74,7 +74,7 @@ page 1 (
 
     button about (
         buttonName: ABOUT
-        label: About this app
+        label: Về ứng dụng này
         layout {
             sequence: 10
             region: @home

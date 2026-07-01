@@ -1,7 +1,7 @@
 page 12 (
-    name: Product
+    name: Sản phẩm
     alias: PRODUCT
-    title: Product
+    title: Sản phẩm
     appearance {
         pageMode: modalDialog
         dialogTemplate: @/drawer
@@ -28,7 +28,7 @@ page 12 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region button-bar (
@@ -80,7 +80,7 @@ page 12 (
     pageItem P12_ITEM_DESC (
         type: textarea
         label {
-            label: Description
+            label: Mô tả
             alignment: left
         }
         settings {
@@ -111,7 +111,7 @@ page 12 (
     pageItem P12_ITEM_NAME (
         type: textField
         label {
-            label: Item Name
+            label: Tên mặt hàng
             alignment: left
         }
         settings {
@@ -141,7 +141,7 @@ page 12 (
     pageItem P12_ITEM_TYPE (
         type: selectList
         label {
-            label: Type
+            label: Loại
             alignment: left
         }
         lov {
@@ -209,7 +209,7 @@ page 12 (
 
     button cancel (
         buttonName: CANCEL
-        label: Cancel
+        label: Hủy
         layout {
             sequence: 10
             region: @button-bar
@@ -227,7 +227,7 @@ page 12 (
 
     button create (
         buttonName: CREATE
-        label: Add Store Item
+        label: Thêm mặt hàng cửa hàng
         layout {
             sequence: 40
             region: @button-bar
@@ -250,7 +250,7 @@ page 12 (
 
     button delete (
         buttonName: DELETE
-        label: Delete
+        label: Xóa
         layout {
             sequence: 20
             region: @button-bar
@@ -275,7 +275,7 @@ page 12 (
 
     button save (
         buttonName: SAVE
-        label: Apply Changes
+        label: Áp dụng thay đổi
         layout {
             sequence: 30
             region: @button-bar
@@ -398,4 +398,3 @@ page 12 (
     )
 
 )
-

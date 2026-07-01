@@ -1,7 +1,7 @@
 page 21 (
-    name: Event Log
+    name: Nhật ký sự kiện
     alias: EVENT-LOG
-    title: Event Log
+    title: Nhật ký sự kiện
     pageGroup: @administration
     appearance {
         pageTemplate: @/standard
@@ -20,7 +20,7 @@ page 21 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region breadcrumb (
@@ -89,8 +89,8 @@ page 21 (
             maxRowsToProcess: 100000
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: This query returns more than #MAX_ROW_COUNT# rows, please filter your data to ensure complete results.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
         }
         actionsMenu {
             savePublicReport: true
@@ -142,7 +142,7 @@ page 21 (
         column CREATED_BY (
             type: plainText
             heading {
-                heading: Created By
+                heading: Tạo bởi
                 alignment: center
             }
             layout {
@@ -159,7 +159,7 @@ page 21 (
         column CREATED_ON (
             type: plainText
             heading {
-                heading: Created On
+                heading: Tạo lúc
                 alignment: center
             }
             layout {
@@ -180,7 +180,7 @@ page 21 (
         column ERROR_MESSAGE (
             type: plainText
             heading {
-                heading: Error Message
+                heading: Thông báo lỗi
                 alignment: center
             }
             layout {
@@ -197,7 +197,7 @@ page 21 (
         column EVENT_DETAIL (
             type: plainText
             heading {
-                heading: Event Detail
+                heading: Chi tiết sự kiện
                 alignment: center
             }
             layout {
@@ -214,7 +214,7 @@ page 21 (
         column EVENT_NAME (
             type: plainText
             heading {
-                heading: Event Name
+                heading: Tên sự kiện
                 alignment: center
             }
             layout {
@@ -231,7 +231,7 @@ page 21 (
         column EVENT_TYPE (
             type: plainText
             heading {
-                heading: Event Type
+                heading: Loại sự kiện
                 alignment: center
             }
             layout {
@@ -266,7 +266,7 @@ page 21 (
         column LOG_SEQ (
             type: plainText
             heading {
-                heading: Log Seq
+                heading: Chuỗi log
                 alignment: center
             }
             layout {
@@ -284,7 +284,7 @@ page 21 (
         column TIME_SINCE (
             type: plainText
             heading {
-                heading: Time
+                heading: Thời gian
                 alignment: center
             }
             layout {
@@ -305,7 +305,7 @@ page 21 (
         column TRACE (
             type: plainText
             heading {
-                heading: Trace
+                heading: Vết
                 alignment: center
             }
             layout {
@@ -322,7 +322,7 @@ page 21 (
         column TRACE2 (
             type: plainText
             heading {
-                heading: Trace2
+                heading: Vết2
                 alignment: center
             }
             layout {
@@ -396,7 +396,7 @@ page 21 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -420,4 +420,3 @@ page 21 (
     )
 
 )
-

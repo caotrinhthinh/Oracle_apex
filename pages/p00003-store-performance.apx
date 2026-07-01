@@ -1,7 +1,7 @@
 page 3 (
-    name: Store
+    name: Cửa hàng
     alias: STORE-PERFORMANCE
-    title: Store
+    title: Cửa hàng
     appearance {
         pageTemplate: @/standard
         templateOptions: #DEFAULT#
@@ -115,7 +115,7 @@ page 3 (
             reportColumnQueryId: 3
             derivedColumn: N
             heading {
-                heading: Days Open
+                heading: Số ngày mở cửa
                 alignment: center
             }
             layout {
@@ -130,7 +130,7 @@ page 3 (
             reportColumnQueryId: 9
             derivedColumn: N
             heading {
-                heading: Days Since First Sale
+                heading: Số ngày từ lần bán đầu tiên
                 alignment: center
             }
             layout {
@@ -145,7 +145,7 @@ page 3 (
             reportColumnQueryId: 7
             derivedColumn: N
             heading {
-                heading: First Sale
+                heading: Lần bán đầu tiên
                 alignment: center
             }
             layout {
@@ -157,7 +157,7 @@ page 3 (
             reportColumnQueryId: 8
             derivedColumn: N
             heading {
-                heading: Most Recent Sale
+                heading: Lần bán gần nhất
                 alignment: center
             }
             layout {
@@ -169,7 +169,7 @@ page 3 (
             reportColumnQueryId: 5
             derivedColumn: N
             heading {
-                heading: Sales Prior 30 Days
+                heading: Doanh số 30 ngày trước
                 alignment: center
             }
             layout {
@@ -184,7 +184,7 @@ page 3 (
             reportColumnQueryId: 4
             derivedColumn: N
             heading {
-                heading: Sales Trailing 30 Days
+                heading: Doanh số 30 ngày gần nhất
                 alignment: center
             }
             layout {
@@ -199,7 +199,7 @@ page 3 (
             reportColumnQueryId: 6
             derivedColumn: N
             heading {
-                heading: Sales Trend
+                heading: Xu hướng doanh số
                 alignment: center
             }
             layout {
@@ -214,7 +214,7 @@ page 3 (
             reportColumnQueryId: 1
             derivedColumn: N
             heading {
-                heading: Store Name
+                heading: Tên cửa hàng
                 alignment: center
             }
             layout {
@@ -226,7 +226,7 @@ page 3 (
             reportColumnQueryId: 2
             derivedColumn: N
             heading {
-                heading: Store Open Date
+                heading: Ngày mở cửa hàng
                 alignment: center
             }
             layout {
@@ -310,7 +310,7 @@ page 3 (
             reportColumnQueryId: 9
             derivedColumn: N
             heading {
-                heading: Discount %
+                heading: Giảm giá %
                 alignment: center
             }
             layout {
@@ -353,7 +353,7 @@ page 3 (
             reportColumnQueryId: 11
             derivedColumn: N
             heading {
-                heading: Suggested Price
+                heading: Giá đề xuất
             }
             layout {
                 sequence: 30
@@ -371,7 +371,7 @@ page 3 (
             reportColumnQueryId: 2
             derivedColumn: N
             heading {
-                heading: Item Type
+                heading: Loại mặt hàng
             }
             layout {
                 sequence: 140
@@ -395,7 +395,7 @@ page 3 (
             derivedColumn: N
             type: link
             heading {
-                heading: Product
+                heading: Sản phẩm
                 alignment: center
             }
             layout {
@@ -422,7 +422,7 @@ page 3 (
             derivedColumn: N
             type: link
             heading {
-                heading: Edit
+                heading: Chỉnh sửa
                 alignment: center
             }
             layout {
@@ -449,7 +449,7 @@ page 3 (
             reportColumnQueryId: 10
             derivedColumn: N
             heading {
-                heading: Promo End
+                heading: Kết thúc khuyến mãi
             }
             layout {
                 sequence: 100
@@ -466,7 +466,7 @@ page 3 (
             reportColumnQueryId: 12
             derivedColumn: N
             heading {
-                heading: Sale Price
+                heading: Giá bán
                 alignment: center
             }
             layout {
@@ -485,7 +485,7 @@ page 3 (
             reportColumnQueryId: 8
             derivedColumn: N
             heading {
-                heading: Promo Start
+                heading: Bắt đầu khuyến mãi
             }
             layout {
                 sequence: 90
@@ -533,7 +533,7 @@ page 3 (
 
     button edit-store (
         buttonName: EDIT_STORE
-        label: Edit Store
+        label: Chỉnh sửa cửa hàng
         layout {
             sequence: 20
             region: @breadcrumb
@@ -563,7 +563,7 @@ page 3 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb

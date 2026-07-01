@@ -1,7 +1,7 @@
 page 11 (
-    name: Products
+    name: Sản phẩm
     alias: PRODUCTS
-    title: Products
+    title: Sản phẩm
     appearance {
         pageTemplate: @/standard
         templateOptions: #DEFAULT#
@@ -17,7 +17,7 @@ page 11 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region breadcrumb (
@@ -85,8 +85,8 @@ page 11 (
             maxRowsToProcess: 100000
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: This query returns more than #MAX_ROW_COUNT# rows, please filter your data to ensure complete results.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
         }
         genAI {
             naturalLanguageSupport: true
@@ -107,7 +107,7 @@ page 11 (
         column EDIT (
             type: link
             heading {
-                heading: Edit
+                heading: Chỉnh sửa
                 alignment: center
             }
             layout {
@@ -136,7 +136,7 @@ page 11 (
         column ID (
             type: plainText
             heading {
-                heading: Product ID
+                heading: ID sản phẩm
             }
             layout {
                 sequence: 20
@@ -155,7 +155,7 @@ page 11 (
         column ITEM_DESC (
             type: plainText
             heading {
-                heading: Description
+                heading: Mô tả
             }
             layout {
                 sequence: 40
@@ -171,7 +171,7 @@ page 11 (
         column ITEM_NAME (
             type: link
             heading {
-                heading: Product
+                heading: Sản phẩm
             }
             layout {
                 sequence: 30
@@ -198,7 +198,7 @@ page 11 (
         column ITEM_TYPE (
             type: plainText
             heading {
-                heading: Item Type
+                heading: Loại mặt hàng
             }
             layout {
                 sequence: 90
@@ -235,7 +235,7 @@ page 11 (
         column STORE_COUNT (
             type: plainText
             heading {
-                heading: Store Count
+                heading: Số cửa hàng
                 alignment: end
             }
             layout {
@@ -256,7 +256,7 @@ page 11 (
         column UNITS_SOLD (
             type: plainText
             heading {
-                heading: Units Sold
+                heading: Số lượng đã bán
                 alignment: end
             }
             layout {
@@ -325,7 +325,7 @@ page 11 (
 
     button create (
         buttonName: CREATE
-        label: Add Store Item
+        label: Thêm mặt hàng cửa hàng
         layout {
             sequence: 20
             region: @breadcrumb
@@ -352,7 +352,7 @@ page 11 (
 
     button reset-report (
         buttonName: RESET_REPORT
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 10
             region: @breadcrumb
@@ -383,7 +383,7 @@ page 11 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -419,4 +419,3 @@ page 11 (
     )
 
 )
-

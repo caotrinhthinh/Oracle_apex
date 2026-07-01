@@ -1,7 +1,7 @@
 page 51 (
-    name: Sales History Interactive Report
+    name: Báo cáo tương tác lịch sử doanh số
     alias: SALES-HISTORY-CLASSIC-IR
-    title: Sales History IR
+    title: Lịch sử doanh số IR
     pageGroup: @reporting
     appearance {
         pageTemplate: @/standard
@@ -19,7 +19,7 @@ page 51 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region breadcrumb (
@@ -125,7 +125,7 @@ page 51 (
         column DATE_OF_SALE (
             type: plainText
             heading {
-                heading: Date of Sale
+                heading: Ngày bán
             }
             layout {
                 sequence: 50
@@ -145,7 +145,7 @@ page 51 (
         column ID (
             type: plainText
             heading {
-                heading: Transaction Line Item ID
+                heading: ID dòng giao dịch
             }
             layout {
                 sequence: 10
@@ -161,7 +161,7 @@ page 51 (
         column ITEM_PRICE (
             type: plainText
             heading {
-                heading: Item Price
+                heading: Giá mặt hàng
                 alignment: end
             }
             layout {
@@ -182,7 +182,7 @@ page 51 (
         column PRODUCT (
             type: plainText
             heading {
-                heading: Product
+                heading: Sản phẩm
             }
             layout {
                 sequence: 40
@@ -203,7 +203,7 @@ page 51 (
         column PRODUCT_ID (
             type: plainText
             heading {
-                heading: Product Id
+                heading: ID sản phẩm
                 alignment: end
             }
             layout {
@@ -221,7 +221,7 @@ page 51 (
         column QUANTITY (
             type: plainText
             heading {
-                heading: Quantity
+                heading: Số lượng
                 alignment: end
             }
             layout {
@@ -242,7 +242,7 @@ page 51 (
         column REGION (
             type: plainText
             heading {
-                heading: Region
+                heading: Khu vực
             }
             layout {
                 sequence: 20
@@ -268,7 +268,7 @@ page 51 (
         column SALE (
             type: plainText
             heading {
-                heading: Sale
+                heading: Bán hàng
                 alignment: end
             }
             layout {
@@ -289,7 +289,7 @@ page 51 (
         column STORE (
             type: plainText
             heading {
-                heading: Store
+                heading: Cửa hàng
             }
             layout {
                 sequence: 30
@@ -309,7 +309,7 @@ page 51 (
         column STORE_ID (
             type: plainText
             heading {
-                heading: Store Id
+                heading: ID cửa hàng
                 alignment: end
             }
             layout {
@@ -327,7 +327,7 @@ page 51 (
         column THE_MONTH (
             type: plainText
             heading {
-                heading: The Month
+                heading: Tháng
             }
             layout {
                 sequence: 130
@@ -346,7 +346,7 @@ page 51 (
         column THE_WEEK (
             type: plainText
             heading {
-                heading: Month Week
+                heading: Tuần trong tháng
             }
             layout {
                 sequence: 60
@@ -365,7 +365,7 @@ page 51 (
         column THE_YEAR (
             type: plainText
             heading {
-                heading: The Year
+                heading: Năm
             }
             layout {
                 sequence: 140
@@ -384,7 +384,7 @@ page 51 (
         column TRANSACTION_ID (
             type: link
             heading {
-                heading: Transaction ID
+                heading: ID giao dịch
             }
             layout {
                 sequence: 80
@@ -517,7 +517,7 @@ page 51 (
     pageItem P51_NAVIGATION (
         type: selectList
         label {
-            label: Navigation
+            label: Điều hướng
             alignment: left
         }
         lov {
@@ -544,7 +544,7 @@ page 51 (
 
     button reset (
         buttonName: reset
-        label: Reset
+        label: Đặt lại
         layout {
             sequence: 30
             region: @breadcrumb
@@ -572,7 +572,7 @@ page 51 (
 
     button up (
         buttonName: up
-        label: Up
+        label: Lên
         layout {
             sequence: 10
             region: @breadcrumb
@@ -645,4 +645,3 @@ page 51 (
     )
 
 )
-

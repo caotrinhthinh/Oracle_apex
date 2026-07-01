@@ -1,7 +1,7 @@
 page 24 (
-    name: Sales History Generation Log
+    name: Nhật ký tạo lịch sử doanh số
     alias: SALES-HISTORY-GENERATION-LOG
-    title: Sales History Generation Log
+    title: Nhật ký tạo lịch sử doanh số
     appearance {
         pageTemplate: @/standard
         templateOptions: #DEFAULT#
@@ -18,7 +18,7 @@ page 24 (
         reloadOnSubmit: always
     }
     help {
-        helpText: No help is available for this page.
+        helpText: Không có trợ giúp cho trang này.
     }
 
     region breadcrumb (
@@ -83,8 +83,8 @@ page 24 (
             maxRowsToProcess: 100000
         }
         messages {
-            whenNoDataFound: No data found.
-            whenMoreDataFound: This query returns more than #MAX_ROW_COUNT# rows, please filter your data to ensure complete results.
+            whenNoDataFound: Không có dữ liệu.
+            whenMoreDataFound: Truy vấn này trả về nhiều hơn #MAX_ROW_COUNT# dòng, vui lòng lọc dữ liệu để đảm bảo kết quả đầy đủ.
         }
         actionsMenu {
             savePublicReport: true
@@ -102,7 +102,7 @@ page 24 (
         column DURATION (
             type: plainText
             heading {
-                heading: Duration (sec)
+                heading: Thời lượng (giây)
                 alignment: center
             }
             layout {
@@ -123,7 +123,7 @@ page 24 (
         column END_TIME (
             type: plainText
             heading {
-                heading: End Time
+                heading: Thời gian kết thúc
                 alignment: center
             }
             layout {
@@ -163,7 +163,7 @@ page 24 (
         column MAX_ORDERS (
             type: plainText
             heading {
-                heading: Max Orders
+                heading: Đơn hàng tối đa
                 alignment: center
             }
             layout {
@@ -181,7 +181,7 @@ page 24 (
         column NUM_DAYS (
             type: plainText
             heading {
-                heading: Num Days
+                heading: Số ngày
                 alignment: center
             }
             layout {
@@ -199,7 +199,7 @@ page 24 (
         column OWNER (
             type: plainText
             heading {
-                heading: Owner
+                heading: Chủ sở hữu
                 alignment: center
             }
             layout {
@@ -216,7 +216,7 @@ page 24 (
         column START_TIME (
             type: plainText
             heading {
-                heading: Start Time
+                heading: Thời gian bắt đầu
                 alignment: center
             }
             layout {
@@ -277,4 +277,3 @@ page 24 (
     )
 
 )
-

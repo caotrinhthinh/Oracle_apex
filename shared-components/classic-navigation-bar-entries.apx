@@ -1,5 +1,5 @@
 classicNavigationBarEntry administration (
-    label: Administration
+    label: Quản trị
     layout {
         sequence: 10
     }
@@ -14,7 +14,7 @@ classicNavigationBarEntry administration (
 )
 
 classicNavigationBarEntry logout (
-    label: Logout
+    label: Đăng xuất
     layout {
         sequence: 20
     }
@@ -29,4 +29,3 @@ classicNavigationBarEntry logout (
         }
     }
 )
-
