@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "apex": {
+      "source": "oracle/skills",
+      "sourceType": "github",
+      "skillPath": "apex/SKILL.md",
+      "computedHash": "353676e70d999b28fc9a3b9f028de656e74cc431fb08c1ff29afe766abcf40b4"
+    },
+    "db": {
+      "source": "oracle/skills",
+      "sourceType": "github",
+      "skillPath": "db/SKILL.md",
+      "computedHash": "17bdf403737694c11350d5eee46da965ae900bdf607ecdbec16d764dae1862a2"
+    }
+  }
+}
